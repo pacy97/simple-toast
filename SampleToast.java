@@ -21,7 +21,12 @@ private Button button;
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-               //Add your operation here.......
+               //Here You can Add your desired Message for the Toast.....
+                //For example....
+                Toast.makeText(this, "Hai I am a simple Toast", Toast.LENGTH_SHORT).show();
+               
+               //You can make the toast stay for long time throug->. Toast.LENGTH_LONG parameter
+                //if you are using a toast inside the OnCreate Method use the name of activity before 'this'.
             }
         });
     }
